@@ -1,0 +1,37 @@
+/* using Google web fonts */
+@import url(http://fonts.googleapis.com/css?family=Finger+Paint); /* Basic CSS for positioning etc */
+body {
+    font-family: 'Finger Paint', cursive;
+    background-image: url('bg.jpg');
+}
+
+#frame {
+    width: 700px;
+    margin: auto; /*places the div with this id in the center*/
+    margin-top: 125px;
+    border: solid 1px #CCC; /*border on this div*/
+    /* some css3 div shadow  */
+    -webkit-box-shadow : 0px 0px 10px #CCC;
+    -moz-box-shadow : 0px 0px 10px #CCC;  
+    box-shadow : 0px 0px 10px #CCC;
+    /* css3 rounded corners */
+    -moz-border-radius:5px;
+    -webkit-border-radius : 5px;
+    -khtml-border-radius : 5px;
+    border-radius: 5px;
+    background-color: #FFF;
+}
+
+#searchInput {
+    height:30px;
+    line-height: 30px;
+    padding: 3px;
+    width: 300px;
+}
+
+#submitBtn {
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    text-align: center;
+}

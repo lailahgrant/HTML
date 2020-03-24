@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery enable / disable button</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="frame">
+      <div class="search">
+        <h1>jQuery enable / disable button</h1>
+        <form method="POST" action="index.php">
+          <input type="text" name="searchQuery" id="searchInput" />
+          <input
+            type="submit"
+            name="submit"
+            id="submitBtn"
+            class="enableOnInput"
+            disabled="disabled"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- jquery library-->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery.min.js"
+    ></script>
+
+    <!-- 1st thing. we need to ctch the user interaction event, 
+    there are many events to choose but here we are going to use "keyup" - this means you can trigger  a set of code to run everytime the user presses & releases a key within the searchInput textbox.
+    -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
